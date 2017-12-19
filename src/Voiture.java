@@ -18,7 +18,7 @@ public class Voiture {
 
     String getDescription() {
         String desc = "la voiture est : \n"
-                + "\tmodèle :" + getModel() + "\n"
+                + "\tmodèle : " + getModel() + "\n"
                 + "\tplaque d'immatriculation : " + getLicensePlate() + "\n"
                 + "\tannée : " + getYear() + "\n"
                 + "\tcouleur : " + getColor() + "\n"
@@ -39,13 +39,16 @@ public class Voiture {
     public void setLicensePlate(String licensePlate) {
         if (licensePlate.length() != 7) return;
         licensePlate = licensePlate.toUpperCase();
-        if ('A' <= licensePlate.charAt(0) && licensePlate.charAt(0) <= 'Z' &&
-                'A' <= licensePlate.charAt(1) && licensePlate.charAt(1) <= 'Z' &&
-                'A' <= licensePlate.charAt(2) && licensePlate.charAt(2) <= 'Z' &&
-                licensePlate.charAt(3) == '-' &&
-                Character.isDigit(licensePlate.charAt(4)) &&
-                Character.isDigit(licensePlate.charAt(5)) &&
-                Character.isDigit(licensePlate.charAt(6))) 
+//        if ('A' <= licensePlate.charAt(0) && licensePlate.charAt(0) <= 'Z' &&
+//                'A' <= licensePlate.charAt(1) && licensePlate.charAt(1) <= 'Z' &&
+//                'A' <= licensePlate.charAt(2) && licensePlate.charAt(2) <= 'Z' &&
+//                licensePlate.charAt(3) == '-' &&
+//                Character.isDigit(licensePlate.charAt(4)) &&
+//                Character.isDigit(licensePlate.charAt(5)) &&
+//                Character.isDigit(licensePlate.charAt(6))) 
+
+// with regex :
+        if (licensePlate.matches("[A-Z]{3}-[0-9]{3}"))
         {
             this.licensePlate = licensePlate;
         }

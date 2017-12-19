@@ -33,11 +33,10 @@ public class DecNineTeenth {
         Voiture maserati = new Voiture();
         maserati.setYear(1963);
         System.out.println(maserati.getDescription());
-        maserati.setLicensePlate("AAA-123");
         maserati.setColor("gris");
         maserati.setModel("Maserati");
         maserati.setKm(1234);
-        maserati.setLicensePlate("ABC-123");
+        maserati.setLicensePlate("ABC-834");
         System.out.println(maserati.getDescription());
         /* 
         private : que dans la classe
