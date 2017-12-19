@@ -31,10 +31,11 @@ public class DecNineTeenth {
         Bonnes pratiques, universelles dans Java : 
         Encapsulation : ne pas permettre l'accès aux données en 
         dehors de la classe.
+        Setters and Getters permettent de manipuler les objets. 
         
    */
    Voiture maserati = new Voiture();
-   maserati.setYear(2017);
+   maserati.setYear(1963);
         System.out.println(maserati.getDescription());
    
     }
