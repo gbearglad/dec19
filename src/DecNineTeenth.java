@@ -12,12 +12,14 @@ public class DecNineTeenth {
 //        System.out.println("Kilométrage : " + titine.km);
 //        System.out.println("Modèle : " + titine.model);
 //        System.out.println("Plaque d'immatriculation : " +titine.licensePlate);
-   Voiture maserati = new Voiture();
-   maserati.color = "Blanche";
-   maserati.licensePlate = "AAA-123";
-   maserati.model = "Fast one";
-   maserati.km = 123456;
-   maserati.year = 2015;
+
+
+//   Voiture maserati = new Voiture();
+//   maserati.color = "Blanche";
+//   maserati.licensePlate = "AAA-123";
+//   maserati.model = "Fast one";
+//   maserati.km = 123456;
+//   maserati.year = 2015;
 //   maserati.print();
    
    // important de séparer les classes métier des cotés techniques : ici on lie 
@@ -25,13 +27,16 @@ public class DecNineTeenth {
    // ci dessous : 
    
    
-        System.out.println(maserati.getDescription());
    /*
         Bonnes pratiques, universelles dans Java : 
         Encapsulation : ne pas permettre l'accès aux données en 
         dehors de la classe.
         
    */
+   Voiture maserati = new Voiture();
+   maserati.setYear(2017);
+        System.out.println(maserati.getDescription());
+   
     }
     
 }

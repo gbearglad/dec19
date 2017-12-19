@@ -1,11 +1,16 @@
 
 public class Voiture {
 
-    String licensePlate;
-    String color;
-    String model;
-    int km;
-    int year;
+    private String licensePlate;
+    private String color;
+    private String model;
+    private int km;
+    private int year;
+    // getters and setters pour écrire dans des attributs privés :
+    public void setYear(int value) {
+        year = value;
+        
+    }
 
     String getDescription() {
         return "la voiture est : \n"
