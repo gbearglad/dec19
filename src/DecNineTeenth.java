@@ -13,7 +13,6 @@ public class DecNineTeenth {
 //        System.out.println("Modèle : " + titine.model);
 //        System.out.println("Plaque d'immatriculation : " +titine.licensePlate);
 
-
 //   Voiture maserati = new Voiture();
 //   maserati.color = "Blanche";
 //   maserati.licensePlate = "AAA-123";
@@ -21,23 +20,33 @@ public class DecNineTeenth {
 //   maserati.km = 123456;
 //   maserati.year = 2015;
 //   maserati.print();
-   
-   // important de séparer les classes métier des cotés techniques : ici on lie 
-   // une classe métier "Voiture" à la console de l'ordinateur : pas bien. mieux 
-   // ci dessous : 
-   
-   
-   /*
+        // important de séparer les classes métier des cotés techniques : ici on lie 
+        // une classe métier "Voiture" à la console de l'ordinateur : pas bien. mieux 
+        // ci dessous : 
+        /*
         Bonnes pratiques, universelles dans Java : 
         Encapsulation : ne pas permettre l'accès aux données en 
         dehors de la classe.
         Setters and Getters permettent de manipuler les objets. 
         
-   */
-   Voiture maserati = new Voiture();
-   maserati.setYear(1963);
+         */
+        Voiture maserati = new Voiture();
+        maserati.setYear(1963);
         System.out.println(maserati.getDescription());
-   
+        maserati.setLicensePlate("AAA-123");
+        maserati.setColor("gris");
+        maserati.setModel("Maserati");
+        maserati.setKm(1234);
+        maserati.setLicensePlate("ABC-123");
+        System.out.println(maserati.getDescription());
+        /* 
+        private : que dans la classe
+        public : toute l'application
+        null : dans le package
+        
+        this : un mot spécial pour référencer l' objet courant. 
+        */
+
     }
-    
+
 }
